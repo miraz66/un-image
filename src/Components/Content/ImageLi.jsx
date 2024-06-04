@@ -22,7 +22,7 @@ const ImageLi = (props) => {
         onMouseOut={handleMouseOut}
         className="relative bg-black hover:opacity-90"
       >
-        <img src={props.images} alt="" />
+        <img src={props.images} alt="Images" />
         {isHovering && (
           <div className="absolute text-white top-4 right-4">
             {HoverFild.FavouritFilfd()}
@@ -31,7 +31,7 @@ const ImageLi = (props) => {
 
         {isHovering && (
           <div className="absolute text-white bottom-3 w-full px-2">
-            {HoverFild.UserFild()}
+            {HoverFild.UserFild(props)}
           </div>
         )}
       </div>
